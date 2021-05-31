@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+	var date=new Date();
+	document.write("Today is "+date);
+	
+	var hours=date.getHours();
+	if (hours>=6 && hours<12)
+	{
+		document.write("Good Morning");
+	}
+	else if (hours>=12 && hours<16)
+	{
+		document.write("Good Afternoon ");
+	}
+	else
+	{
+		document.write(" Good Evening ");
+	}
+	
+	var month=date.getMonth();
+	var rem=11-month;
+	document.write("<br>Number of days left till end of year: "+(rem*30));
+</script>
+</body>
+</html>
